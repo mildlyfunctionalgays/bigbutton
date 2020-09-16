@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP MIC550x
+D 300mA Single Output LDO in Small Packages
+F http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5501-02-03-04-300mA-Single-Output-LDO-in-Small-Packages-DS20006006B.pdf
+$ENDCMP
+#
 $CMP SN74LV1T34DBV
 F https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf
 $ENDCMP

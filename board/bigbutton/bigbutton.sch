@@ -294,32 +294,6 @@ Text Label 4800 4250 0    50   ~ 0
 I2C_SDA
 Text Label 4800 4150 0    50   ~ 0
 I2C_SCL
-$Comp
-L Connector:TestPoint TP_SWDIO1
-U 1 1 5F610285
-P 10550 1150
-F 0 "TP_SWDIO1" V 10550 1350 50  0000 L CNN
-F 1 "TestPoint" V 10595 1338 50  0001 L CNN
-F 2 "" H 10750 1150 50  0001 C CNN
-F 3 "~" H 10750 1150 50  0001 C CNN
-	1    10550 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP_SWCLK1
-U 1 1 5F610307
-P 10550 1250
-F 0 "TP_SWCLK1" V 10550 1450 50  0000 L CNN
-F 1 "TestPoint" V 10595 1438 50  0001 L CNN
-F 2 "" H 10750 1250 50  0001 C CNN
-F 3 "~" H 10750 1250 50  0001 C CNN
-	1    10550 1250
-	0    1    1    0   
-$EndComp
-Text Label 10550 1150 2    50   ~ 0
-SWDIO
-Text Label 10550 1250 2    50   ~ 0
-SWCLK
 Text Label 4800 4350 0    50   ~ 0
 USB_D-
 $Comp
@@ -457,72 +431,6 @@ Text Label 4800 3850 0    50   ~ 0
 MCU_DIN
 Text Label 4800 3750 0    50   ~ 0
 MCU_SCK
-$Comp
-L Connector:TestPoint TP_GND_1
-U 1 1 5F63CA5F
-P 10550 600
-F 0 "TP_GND_1" V 10550 788 50  0000 L CNN
-F 1 "TestPoint" V 10595 788 50  0001 L CNN
-F 2 "" H 10750 600 50  0001 C CNN
-F 3 "~" H 10750 600 50  0001 C CNN
-	1    10550 600 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5F63D061
-P 10550 600
-F 0 "#PWR01" H 10550 350 50  0001 C CNN
-F 1 "GND" V 10555 472 50  0000 R CNN
-F 2 "" H 10550 600 50  0001 C CNN
-F 3 "" H 10550 600 50  0001 C CNN
-	1    10550 600 
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP_3V3_1
-U 1 1 5F63F10F
-P 10550 700
-F 0 "TP_3V3_1" V 10550 900 50  0000 L CNN
-F 1 "TestPoint" V 10595 888 50  0001 L CNN
-F 2 "" H 10750 700 50  0001 C CNN
-F 3 "~" H 10750 700 50  0001 C CNN
-	1    10550 700 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR03
-U 1 1 5F63F709
-P 10550 700
-F 0 "#PWR03" H 10550 550 50  0001 C CNN
-F 1 "+3V3" V 10565 828 50  0000 L CNN
-F 2 "" H 10550 700 50  0001 C CNN
-F 3 "" H 10550 700 50  0001 C CNN
-	1    10550 700 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP_5V_1
-U 1 1 5F63F82F
-P 10550 800
-F 0 "TP_5V_1" V 10550 1000 50  0000 L CNN
-F 1 "TestPoint" V 10595 988 50  0001 L CNN
-F 2 "" H 10750 800 50  0001 C CNN
-F 3 "~" H 10750 800 50  0001 C CNN
-	1    10550 800 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR09
-U 1 1 5F63FFC3
-P 10550 800
-F 0 "#PWR09" H 10550 650 50  0001 C CNN
-F 1 "+5V" V 10565 928 50  0000 L CNN
-F 2 "" H 10550 800 50  0001 C CNN
-F 3 "" H 10550 800 50  0001 C CNN
-	1    10550 800 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4100 1950 4200 1950
 Connection ~ 4200 1950
@@ -1483,17 +1391,6 @@ Wire Wire Line
 Wire Wire Line
 	6400 2200 6900 2200
 $Comp
-L Logic_LevelTranslator:SN74AUP1T34DCK U?
-U 1 1 5F79F9D3
-P 6900 4550
-F 0 "U?" H 7344 4596 50  0000 L CNN
-F 1 "SN74AUP1T34DCK" H 7344 4505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 6900 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74aup1t34.pdf" H 6900 3950 50  0001 C CNN
-	1    6900 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L bigbutton:SN74LV1T34DBV U?
 U 1 1 5F7A4DA0
 P 6050 2200
@@ -1528,4 +1425,136 @@ F 3 "" H 6050 1850 50  0001 C CNN
 	1    6050 1850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Linear:MIC5501-3.0YM5 U?
+U 1 1 5F7ACD40
+P 5100 6500
+F 0 "U?" H 5100 6867 50  0000 C CNN
+F 1 "MIC5501-3.3YM5" H 5100 6776 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5100 6100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 4850 6750 50  0001 C CNN
+	1    5100 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 6400 4700 6600
+Wire Wire Line
+	4700 6400 4500 6400
+Wire Wire Line
+	4500 6400 4500 6300
+Connection ~ 4700 6400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F7B4962
+P 4500 6300
+F 0 "#PWR?" H 4500 6150 50  0001 C CNN
+F 1 "+5V" H 4515 6473 50  0000 C CNN
+F 2 "" H 4500 6300 50  0001 C CNN
+F 3 "" H 4500 6300 50  0001 C CNN
+	1    4500 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6400 5700 6400
+Wire Wire Line
+	5700 6400 5700 6300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F7B7EC3
+P 5700 6300
+F 0 "#PWR?" H 5700 6150 50  0001 C CNN
+F 1 "+3V3" H 5715 6473 50  0000 C CNN
+F 2 "" H 5700 6300 50  0001 C CNN
+F 3 "" H 5700 6300 50  0001 C CNN
+	1    5700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7B8883
+P 5100 6800
+F 0 "#PWR?" H 5100 6550 50  0001 C CNN
+F 1 "GND" H 5105 6627 50  0000 C CNN
+F 2 "" H 5100 6800 50  0001 C CNN
+F 3 "" H 5100 6800 50  0001 C CNN
+	1    5100 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7B9C07
+P 4500 6500
+F 0 "C?" H 4300 6550 50  0000 L CNN
+F 1 "1µF" H 4250 6450 50  0000 L CNN
+F 2 "" H 4500 6500 50  0001 C CNN
+F 3 "~" H 4500 6500 50  0001 C CNN
+	1    4500 6500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 6400
+Wire Wire Line
+	4500 6600 4500 6800
+Wire Wire Line
+	4500 6800 5100 6800
+Connection ~ 5100 6800
+Wire Wire Line
+	5100 6800 5700 6800
+Wire Wire Line
+	5700 6800 5700 6600
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C0E99
+P 5700 6500
+F 0 "C?" H 5792 6546 50  0000 L CNN
+F 1 "1µF" H 5792 6455 50  0000 L CNN
+F 2 "" H 5700 6500 50  0001 C CNN
+F 3 "~" H 5700 6500 50  0001 C CNN
+	1    5700 6500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 6400
+$Comp
+L Connector:TestPoint_Small TP_5V_1
+U 1 1 5F7C43D8
+P 4400 6300
+F 0 "TP_5V_1" H 4050 6300 50  0000 L CNN
+F 1 "TestPoint_Small" H 4448 6255 50  0001 L CNN
+F 2 "" H 4600 6300 50  0001 C CNN
+F 3 "~" H 4600 6300 50  0001 C CNN
+	1    4400 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6300 4400 6400
+Wire Wire Line
+	4400 6400 4500 6400
+$Comp
+L Connector:TestPoint_Small TP_GND_1
+U 1 1 5F7C7F7F
+P 4500 6900
+F 0 "TP_GND_1" H 4548 6900 50  0000 L CNN
+F 1 "TestPoint_Small" H 4548 6855 50  0001 L CNN
+F 2 "" H 4700 6900 50  0001 C CNN
+F 3 "~" H 4700 6900 50  0001 C CNN
+	1    4500 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6800 4500 6900
+Connection ~ 4500 6800
+$Comp
+L Connector:TestPoint_Small TP_3V3_1
+U 1 1 5F7CBAA6
+P 5800 6300
+F 0 "TP_3V3_1" H 5848 6300 50  0000 L CNN
+F 1 "TestPoint_Small" H 5848 6255 50  0001 L CNN
+F 2 "" H 6000 6300 50  0001 C CNN
+F 3 "~" H 6000 6300 50  0001 C CNN
+	1    5800 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6300 5800 6400
+Wire Wire Line
+	5800 6400 5700 6400
 $EndSCHEMATC
