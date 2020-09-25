@@ -1561,4 +1561,6 @@ F 3 "https://datasheet.lcsc.com/szlcsc/2009030936_MCC-Micro-Commercial-Component
 	1    3150 6100
 	1    0    0    -1  
 $EndComp
+Text Label 3250 1400 2    50   ~ 0
+~RST
 $EndSCHEMATC
