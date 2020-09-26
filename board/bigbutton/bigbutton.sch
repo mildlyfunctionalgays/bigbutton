@@ -1563,4 +1563,75 @@ F 3 "https://datasheet.lcsc.com/szlcsc/2009030936_MCC-Micro-Commercial-Component
 $EndComp
 Text Label 3250 1400 2    50   ~ 0
 ~RST
+NoConn ~ 3500 2850
+NoConn ~ 3500 2950
+NoConn ~ 3500 3050
+NoConn ~ 3500 3250
+NoConn ~ 3500 3350
+NoConn ~ 3500 3450
+NoConn ~ 3500 3550
+NoConn ~ 3500 3650
+NoConn ~ 3500 3750
+NoConn ~ 3500 3850
+NoConn ~ 3500 3950
+NoConn ~ 3500 4050
+NoConn ~ 3500 4150
+NoConn ~ 3500 4250
+NoConn ~ 3500 4350
+NoConn ~ 3500 4450
+NoConn ~ 3500 4550
+NoConn ~ 3500 4650
+NoConn ~ 3500 4750
+NoConn ~ 4800 4750
+NoConn ~ 4800 4050
+NoConn ~ 4800 3650
+NoConn ~ 4800 3750
+NoConn ~ 4800 3850
+NoConn ~ 10500 3550
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5F7620D0
+P 1450 2750
+F 0 "SW4" H 1450 3035 50  0000 C CNN
+F 1 "BOOT0" H 1450 2944 50  0000 C CNN
+F 2 "bigbutton:SW_SPST_XKB_TS-1187A" H 1450 2950 50  0001 C CNN
+F 3 "~" H 1450 2950 50  0001 C CNN
+	1    1450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0125
+U 1 1 5F76361E
+P 1250 2750
+F 0 "#PWR0125" H 1250 2600 50  0001 C CNN
+F 1 "+3V3" V 1265 2878 50  0000 L CNN
+F 2 "" H 1250 2750 50  0001 C CNN
+F 3 "" H 1250 2750 50  0001 C CNN
+	1    1250 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5F764235
+P 1650 2850
+F 0 "R6" H 1709 2896 50  0000 L CNN
+F 1 "10kΩ" H 1709 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1650 2850 50  0001 C CNN
+F 3 "~" H 1650 2850 50  0001 C CNN
+	1    1650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5F764D96
+P 1650 2950
+F 0 "#PWR0126" H 1650 2700 50  0001 C CNN
+F 1 "GND" H 1655 2777 50  0000 C CNN
+F 2 "" H 1650 2950 50  0001 C CNN
+F 3 "" H 1650 2950 50  0001 C CNN
+	1    1650 2950
+	1    0    0    -1  
+$EndComp
+Text Label 1650 2750 0    50   ~ 0
+BOOT0
 $EndSCHEMATC
