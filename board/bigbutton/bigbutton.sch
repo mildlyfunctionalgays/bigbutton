@@ -405,26 +405,10 @@ Wire Wire Line
 	1950 5700 2400 5700
 Wire Wire Line
 	1950 5800 2400 5800
-$Comp
-L MCU_ST_STM32F3:STM32F302CBTx U1
-U 1 1 5F636660
-P 4200 3450
-F 0 "U1" H 4500 5000 50  0000 C CNN
-F 1 "STM32F302CBTx" H 4750 4900 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 3600 2050 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00094064.pdf" H 4200 3450 50  0001 C CNN
-	1    4200 3450
-	1    0    0    -1  
-$EndComp
 Text Label 4800 3850 0    50   ~ 0
 MCU_DIN
 Text Label 4800 3750 0    50   ~ 0
 MCU_SCK
-Wire Wire Line
-	4100 1950 4200 1950
-Connection ~ 4200 1950
-Wire Wire Line
-	4200 1950 4300 1950
 Connection ~ 4300 1950
 Wire Wire Line
 	4300 1950 4400 1950
@@ -441,14 +425,9 @@ F 3 "" H 4300 1700 50  0001 C CNN
 	1    4300 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 4950 4200 4950
 Connection ~ 4100 4950
 Wire Wire Line
 	4100 4950 4000 4950
-Connection ~ 4200 4950
-Wire Wire Line
-	4200 4950 4100 4950
 Wire Wire Line
 	4100 4950 4100 5100
 $Comp
@@ -1634,4 +1613,25 @@ F 3 "" H 1650 2950 50  0001 C CNN
 $EndComp
 Text Label 1650 2750 0    50   ~ 0
 BOOT0
+$Comp
+L MCU_ST_STM32F3:STM32F303CBTx U1
+U 1 1 5F712979
+P 4200 3450
+F 0 "U1" H 4500 5050 50  0000 C CNN
+F 1 "STM32F303CBTx" H 4750 4950 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 3600 2050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1950 4300 1950
+Wire Wire Line
+	4200 4950 4300 4950
+Wire Wire Line
+	4100 1950 4200 1950
+Connection ~ 4200 1950
+Wire Wire Line
+	4100 4950 4200 4950
+Connection ~ 4200 4950
 $EndSCHEMATC
