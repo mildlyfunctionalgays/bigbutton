@@ -272,7 +272,7 @@ U 1 1 5F6291FD
 P 1350 6100
 F 0 "J2" H 1457 6967 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1457 6876 50  0000 C CNN
-F 2 "bigbutton:USB_C_Receptacle_HRO_TYPE-C-31-M-13_handsolder" H 1500 6100 50  0001 C CNN
+F 2 "bigbutton:USB_C_Receptacle_JING_C167321_HandSolder" H 1500 6100 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1500 6100 50  0001 C CNN
 	1    1350 6100
 	1    0    0    -1  
@@ -393,9 +393,9 @@ F 3 "" H 2100 4050 50  0001 C CNN
 $EndComp
 Text Label 4800 3950 0    50   ~ 0
 MCU_DOUT
-Text Label 4800 3250 0    50   ~ 0
-USB_CC1
 Text Label 4800 3350 0    50   ~ 0
+USB_CC1
+Text Label 4800 3250 0    50   ~ 0
 USB_CC2
 Text Label 1950 5700 0    50   ~ 0
 USB_CC1
