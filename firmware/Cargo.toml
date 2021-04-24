@@ -1,0 +1,31 @@
+[package]
+name = "bigbutton"
+version = "0.1.0"
+authors = ["Artemis Tosini <me@artem.ist>"]
+edition = "2018"
+
+
+[dependencies]
+embedded-hal = "0.2"
+cortex-m = "0.6"
+cortex-m-rt = "0.6"
+cortex-m-semihosting = "0.3"
+panic-semihosting = "0.5"
+ws2812-spi = "0.3"
+smart-leds = "0.3"
+usb-device = "0.2"
+usbd-serial = "0.1"
+
+[dependencies.stm32f3xx-hal]
+version = "0.5"
+features = [ "rt", "stm32f303xb", "stm32-usbd" ]
+
+[[bin]]
+name = "bigbutton"
+test = false
+bench = false
+
+[profile.release]
+codegen-units = 1
+debug = true
+lto = true
