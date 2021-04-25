@@ -3866,7 +3866,7 @@
   (gr_line (start 133.5 73.5) (end 133.5 136.5) (layer "Edge.Cuts") (width 0.1) (tstamp ac1a96fa-094f-4383-9205-1d36b4f87def))
   (gr_line (start 76.5 73.5) (end 133.5 73.5) (layer "Edge.Cuts") (width 0.1) (tstamp b84d1942-9ce5-45a9-8330-0d49fa669338))
   (gr_line (start 76.5 136.5) (end 76.5 73.5) (layer "Edge.Cuts") (width 0.1) (tstamp f7ebda5d-5893-4c09-897d-8b02aa21f6f5))
-  (gr_text "rev 2 WIP\n2020-10-18" (at 124.5746 126.0602) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005f821f27)
+  (gr_text "bigbutton rev 2\n2021-04-24" (at 124.5746 126.0602) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005f821f27)
     (effects (font (size 0.8128 0.8128) (thickness 0.1524)))
   )
   (gr_text "JLCJLCJLCJLC" (at 124.6 131) (layer "F.SilkS") (tstamp 1ee5b862-dbf2-41c9-895c-821befdf550c)
